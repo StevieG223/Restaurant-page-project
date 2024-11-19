@@ -1,0 +1,101 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* reset complete */
+
+nav{
+    background-color: #F8F4E1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #74512D;
+}
+
+.logo, .buttons{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    align-items: center;
+}
+
+.cowboy-logo{
+    width: 50px;
+    height: auto;
+}
+
+.title{
+    font-size: large;
+    font-family: "Rye", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn{
+	box-shadow:inset 0px 1px 0px 0px #a6827e;
+	background:linear-gradient(to bottom, #7d5d3b 5%, #74512D 100%);
+	background-color:#74512D;
+	border-radius:16px;
+	border:3px solid #74512D;
+	display:inline-block;
+	cursor:pointer;
+	color:#F8F4E1;
+	font-family: "Rye", serif;
+	font-size:16px;
+	padding:12px 29px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4d3534;
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+	background-color:#634b30;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
