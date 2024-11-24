@@ -1,20 +1,36 @@
 import './styles.css';
 import Icon from './cowboy-hat-with-moustache-svgrepo-com.png';
-
-
-const myIcon = new Image();
-myIcon.src = Icon;
-myIcon.classList.add("cowboy-logo");
-
-const element = document.getElementById("cowboy-logo");
-element.append(myIcon);
+import CowboyImage from "./man-drink-hot-tea-with-green-hill-background.jpg"
 
 
 
-function addImage(classToAppend, source){
-    const myImage = new Image();
-    myImage.src = source;
-    element = document.getElementsByClassName(classToAppend);
-    element.append(myImage);
+function addImage(elementToAddImageTo, imageSource, imageClass){
+    let myImage = new Image();
+    myImage.src = imageSource;
+    if (imageClass){
+        myImage.classList.add(imageClass)
+    }    
+    let results = Array.from(document.getElementsByClassName(elementToAddImageTo));
+    results[0].append(myImage);
 }
+
+addImage("cowboy-logo", Icon, "cowboy");
+addImage("content", CowboyImage, "cowboy-picture");
+
+let content = Array.from(document.getElementsByClassName("content"))[0];
+let writeUp = document.createElement("div");
+writeUp.classList.add("write-up");
+writeUp.innerHTML = `
+<h1 class="write-up-title">Giddy Up, Partner!</h1>
+<p class="write-up-content">Saddle up and step into a cozy corner of the Old West at The Cowboy Café. 
+    Nestled in the heart of the town, our café serves up hearty meals and a warm, friendly atmosphere that 
+    makes you feel like you've ridden right into the middle of a cowboy campfire. 
+    Whether you're a cowboy, cowgirl, or city slicker, you'll feel right at home here!</p>
+    <p class="write-up-content">Step into our rustic saloon-inspired interior, where barnwood walls, 
+    vintage cowboy décor, and the sound of country music set the perfect tone. Whether you're here to enjoy a hearty meal, 
+    relax with a cup of coffee, or celebrate a special occasion, The Cowboy Café offers an authentic cowboy vibe you 
+    won't find anywhere else.</p>
+    <p class="write-up-content">We can't wait to see you, partner. So grab your hat, hitch up your horse, and ride on 
+    over to The Cowboy Café—where cowboy hospitality and good food meet!</p>`;
+content.appendChild(writeUp);
 
