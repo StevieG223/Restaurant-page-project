@@ -69,7 +69,7 @@ nav{
     height: auto;
 }
 
-.title, .write-up-title{
+.title, .write-up-title, .menu-item-title{
     font-size: large;
     font-family: "Rye", serif;
     font-weight: 400;
@@ -126,7 +126,7 @@ nav{
 	font-size: xx-large;
 }
 
-.write-up-content{
+.write-up-content, .menu-item-description{
 	font-family: "Roboto", serif;
   font-weight: 400;
   font-size: 20px;
