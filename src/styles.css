@@ -126,7 +126,7 @@ nav{
 	font-size: xx-large;
 }
 
-.write-up-content, .menu-item-description, .menu-item-price{
+.write-up-content, .menu-item-description, .menu-item-price, .footer-content{
 	font-family: "Roboto", serif;
   font-weight: 400;
   font-size: 20px;
@@ -157,4 +157,29 @@ nav{
 
 .about-writeup{
 	width: 33%;
+}
+
+footer{
+	display:flex;
+	flex-direction: column;
+	background-color: #4d3534;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-content{
+	display: flex;
+	flex-direction: row;
+	color:#F8F4E1;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+a{
+	color: #F8F4E1;
+}
+
+.cowboy-white{
+	padding: 15px;
+	width: 60%;
 }
